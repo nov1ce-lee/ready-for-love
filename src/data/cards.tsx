@@ -16,7 +16,14 @@ import {
   ButterflyIllustration,
   StandingOIllustration,
   PretzelIllustration,
-  SixtyNineIllustration
+  SixtyNineIllustration,
+  HuggingIllustration,
+  HandsIllustration,
+  BridgeIllustration,
+  ChairIllustration,
+  TShapeIllustration,
+  MusicIllustration,
+  CandleIllustration
 } from '../components/illustrations/Illustrations';
 
 export const cards: CardData[] = [
@@ -249,5 +256,120 @@ export const cards: CardData[] = [
     content: '双方头尾相对，同时为对方进行口部刺激。可以侧卧（更轻松）或上下叠放（更刺激）。',
     tips: '注意保持卫生，不要强迫自己深入喉咙。侧卧位可以避免颈部酸痛。',
     illustration: <SixtyNineIllustration />
+  },
+  {
+    id: 'k5',
+    title: '温存时光',
+    type: 'knowledge',
+    description: '结束后的拥抱比过程更重要。',
+    content: '在高潮过后，身体会分泌催产素。此时的拥抱、亲吻和交流能极大地增强情感连接。不要立刻入睡或分开，花至少10分钟时间互相依偎。',
+    illustration: <HuggingIllustration />
+  },
+  {
+    id: 'k6',
+    title: '知情同意',
+    type: 'knowledge',
+    description: '积极的同意是性感的开始。',
+    content: '同意不是一次性的，而是持续的。学会阅读非语言信号：对方的呼吸、身体紧张度。如果不确定，停下来问一句“这样感觉好吗？”。',
+    illustration: <HandsIllustration />
+  },
+  {
+    id: 'k7',
+    title: '盆底肌健康',
+    type: 'knowledge',
+    description: '核心肌肉群的锻炼。',
+    content: '无论男女，凯格尔运动（Kegel）都能增强盆底肌力量，提升控制力和愉悦感。尝试收缩尿道括约肌，保持3-5秒后放松，重复练习。',
+    illustration: <LotusIllustration />
+  },
+
+  // New Foreplay Cards
+  {
+    id: 'f5',
+    title: '舒缓按摩',
+    type: 'foreplay',
+    description: '用掌心的温度唤醒身体。',
+    content: '准备好按摩油。从肩膀开始，顺着脊柱向下推拿。不要急于触碰敏感点，先让全身肌肉放松下来。重点按摩大腿内侧和腰部。',
+    illustration: <HandsIllustration />
+  },
+  {
+    id: 'f6',
+    title: '味觉探索',
+    type: 'foreplay',
+    description: '甜蜜的感官游戏。',
+    content: '准备一些巧克力、水果或奶油。蒙住对方眼睛，将食物涂抹在身体不同部位，然后用嘴唇和舌头去品尝和清理。',
+    illustration: <SpoonIllustration />
+  },
+  {
+    id: 'f7',
+    title: '呼吸同步',
+    type: 'foreplay',
+    description: '能量的共振与连接。',
+    content: '面对面坐着或躺着，将手放在对方心脏位置。尝试调整呼吸节奏，直到两人的呼吸完全同步。这是一种深层的能量交换。',
+    illustration: <HuggingIllustration />
+  },
+
+  // New Position Cards
+  {
+    id: 'p12',
+    title: '拱桥式',
+    type: 'position',
+    description: '核心发力，更深的角度。',
+    content: '女性平躺，双脚踩床，臀部抬起形成拱桥状。男性跪姿或站立进入。这个角度能刺激到平时难以触及的区域。',
+    difficulty: 3,
+    illustration: <BridgeIllustration />
+  },
+  {
+    id: 'p13',
+    title: '坐姿爱抚',
+    type: 'position',
+    description: '面对面的深度交流。',
+    content: '男性坐在椅子或床边，女性跨坐在男性腿上，面对面。女性双腿缠绕男性腰部。这个姿势非常省力，且适合长时间接吻。',
+    difficulty: 1,
+    illustration: <ChairIllustration />
+  },
+  {
+    id: 'p14',
+    title: 'T字形',
+    type: 'position',
+    description: '垂直角度的独特体验。',
+    content: '女性平躺，男性侧躺，两人身体呈T字形（90度）。男性将一条腿搭在女性身上。这个姿势适合缓慢、温柔的节奏。',
+    difficulty: 2,
+    illustration: <TShapeIllustration />
+  },
+
+  // New Interaction Cards
+  {
+    id: 'i7',
+    title: '镜面模仿',
+    type: 'interaction',
+    description: '你是我的镜子。',
+    content: '面对面坐着。一方做动作（抚摸自己、表情变化），另一方必须像镜子一样完全同步模仿。5分钟后交换角色。',
+    illustration: <MoonIllustration />
+  },
+  {
+    id: 'i8',
+    title: '禁手挑战',
+    type: 'interaction',
+    description: '探索除双手以外的接触。',
+    content: '在接下来的10分钟前戏中，双方都不能使用双手。尝试用嘴唇、头发、胸部或大腿去触碰和挑逗对方。',
+    illustration: <KnotIllustration />
+  },
+
+  // Tip Cards
+  {
+    id: 't1',
+    title: '氛围音乐',
+    type: 'tip',
+    description: '听觉是情绪的催化剂。',
+    content: '提前准备一份歌单。推荐爵士、R&B或Lo-Fi风格。节奏缓慢、低音丰富的音乐能有效调节心跳，让身体更放松。',
+    illustration: <MusicIllustration />
+  },
+  {
+    id: 't2',
+    title: '灯光艺术',
+    type: 'tip',
+    description: '朦胧美是最好的滤镜。',
+    content: '避免明亮的顶灯。使用暖色调的台灯、落地灯，或者点燃几支香氛蜡烛。摇曳的烛光能让皮肤看起来更细腻，氛围更暧昧。',
+    illustration: <CandleIllustration />
   }
 ];

@@ -267,3 +267,75 @@ export const SpoonIllustration = () => (
     <path d="M40 50 Q40 40 50 40 Q60 40 60 50 L60 70 Q60 75 50 75 Q40 75 40 70 Z" {...StrokeProps} />
   </svg>
 );
+
+export const HuggingIllustration = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+    {/* Abstract Embrace */}
+    <path d="M30 50 Q30 30 50 30 Q70 30 70 50" {...StrokeProps} />
+    <path d="M30 50 Q30 80 50 80 Q70 80 70 50" {...StrokeProps} />
+    <circle cx="40" cy="40" r="8" {...StrokeProps} />
+    <circle cx="60" cy="40" r="8" {...StrokeProps} />
+    <path d="M20 50 Q50 60 80 50" {...StrokeProps} strokeDasharray="2 2" />
+  </svg>
+);
+
+export const HandsIllustration = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+    {/* Holding Hands Abstract */}
+    <path d="M30 60 Q40 40 50 50" {...StrokeProps} />
+    <path d="M70 60 Q60 40 50 50" {...StrokeProps} />
+    <circle cx="50" cy="50" r="10" {...StrokeProps} strokeDasharray="2 2" />
+    <path d="M45 50 L55 50" {...StrokeProps} />
+    <path d="M50 45 L50 55" {...StrokeProps} />
+  </svg>
+);
+
+export const BridgeIllustration = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+    {/* Bridge Arch */}
+    <path d="M20 80 Q50 20 80 80" {...StrokeProps} />
+    <line x1="20" y1="80" x2="80" y2="80" {...StrokeProps} strokeDasharray="2 2" />
+    <circle cx="50" cy="50" r="8" {...StrokeProps} />
+  </svg>
+);
+
+export const ChairIllustration = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+    {/* Chair Abstract */}
+    <path d="M30 80 L30 50 L70 50 L70 80" {...StrokeProps} />
+    <path d="M30 50 L30 20" {...StrokeProps} />
+    <path d="M30 40 L70 40" {...StrokeProps} />
+    <circle cx="50" cy="30" r="8" {...StrokeProps} />
+  </svg>
+);
+
+export const TShapeIllustration = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+    {/* Perpendicular Lines */}
+    <line x1="50" y1="20" x2="50" y2="80" {...StrokeProps} />
+    <line x1="20" y1="50" x2="80" y2="50" {...StrokeProps} />
+    <circle cx="50" cy="50" r="5" {...StrokeProps} />
+    <circle cx="50" cy="20" r="5" {...StrokeProps} />
+    <circle cx="80" cy="50" r="5" {...StrokeProps} />
+  </svg>
+);
+
+export const MusicIllustration = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+    {/* Musical Note */}
+    <path d="M40 70 A10 10 0 1 1 60 70 L60 20 L80 30" {...StrokeProps} />
+    <circle cx="50" cy="70" r="5" fill="#d4af37" />
+    <path d="M20 40 Q30 30 40 40" {...StrokeProps} opacity="0.5" />
+    <path d="M70 50 Q80 40 90 50" {...StrokeProps} opacity="0.5" />
+  </svg>
+);
+
+export const CandleIllustration = () => (
+  <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+    {/* Candle */}
+    <rect x="35" y="40" width="30" height="50" {...StrokeProps} />
+    <path d="M50 40 L50 30" {...StrokeProps} />
+    <path d="M50 30 Q55 20 50 10 Q45 20 50 30" {...StrokeProps} fill="#d4af37" opacity="0.8" />
+    <path d="M30 80 L70 80" {...StrokeProps} strokeDasharray="2 2" />
+  </svg>
+);
