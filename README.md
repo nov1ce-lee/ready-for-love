@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# Love Tarot - 亲密关系探索指引
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> "在古老的智慧与现代的亲密之间，寻找灵魂与身体的共鸣。"
 
-Currently, two official plugins are available:
+这是一个融合了塔罗神秘学美学与性教育普及的互动式网页应用。我们不使用露骨的图像，而是通过抽象的艺术线条与符号，引导伴侣探索亲密关系的无限可能。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 项目愿景
 
-## React Compiler
+在这个项目中，我们试图打破传统的性教育刻板印象，将其转化为一场探索未知的仪式。每一次抽卡，都是一次对彼此身心的重新认识。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+不仅仅是关于“姿势”，更是关于“连接”。
 
-## Expanding the ESLint configuration
+## ✨ 核心功能
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **沉浸式塔罗体验**：
+  - 独特的翻牌动画与音效设计。
+  - 羊皮纸质感与神秘学符号构建的视觉氛围。
+  
+- **智能流程生成器**：
+  - 告别选择困难，一键生成完整的亲密旅程。
+  - **前调 (Warm-up)**：从身心放松开始。
+  - **中调 (Main)**：探索核心的互动与连接。
+  - **尾调 (Aftercare)**：重视结束后的温存与交流。
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **多元卡牌系统**：
+  - 包含 `知识普及`、`前戏引导`、`体位探索`、`互动游戏`、`贴士建议` 五大维度。
+  - 所有插画均采用抽象艺术风格，优雅且具有想象空间。
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **人性化设置**：
+  - 支持强度筛选与去重机制，确保每次体验的新鲜感。
+  - 历史记录本地存储，守护你的隐私与回忆。
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ 技术栈
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+本项目采用现代前端技术构建，注重性能与交互体验：
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **核心框架**: React 18 + TypeScript
+- **构建工具**: Vite
+- **样式方案**: Tailwind CSS (定制化塔罗配色主题)
+- **动画引擎**: Framer Motion (实现丝滑的卡牌物理效果)
+- **图标系统**: Lucide React + 自研 SVG 插画库
+- **音频支持**: Web Audio API (零依赖音效方案)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 快速开始
+
+如果你想在本地运行这个神秘的指引：
+
+1. **克隆仓库**
+   ```bash
+   git clone <repository-url>
+   cd readyForLove
+   ```
+
+2. **安装依赖**
+   ```bash
+   npm install
+   ```
+
+3. **启动仪式 (开发服务器)**
+   ```bash
+   npm run dev
+   ```
+
+## 📜 许可证
+
+MIT License. 愿爱与智慧与你同在。
