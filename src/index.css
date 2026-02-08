@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-tarot-bg text-tarot-text font-body antialiased min-h-screen overflow-x-hidden relative;
+  background-color: #0F0F12;
+  background-image:
+    radial-gradient(circle at 50% 30%, rgba(227, 212, 181, 0.25) 0%, rgba(15, 15, 18, 0.2) 55%, rgba(5, 5, 5, 1) 100%),
+    radial-gradient(circle at 80% 80%, rgba(197, 160, 89, 0.12) 0%, rgba(5, 5, 5, 0.9) 55%, rgba(5, 5, 5, 1) 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E"),
+    repeating-linear-gradient(45deg, rgba(197, 160, 89, 0.04) 0px, rgba(197, 160, 89, 0.04) 1px, transparent 1px, transparent 9px),
+    repeating-linear-gradient(-45deg, rgba(197, 160, 89, 0.035) 0px, rgba(197, 160, 89, 0.035) 1px, transparent 1px, transparent 11px);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  /* 额外的陈旧纹理叠加 */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04' numOctaves='5' result='noise'/%3E%3CfeDiffuseLighting in='noise' lighting-color='%23C5A059' surfaceScale='2'%3E%3CfeDistantLight azimuth='45' elevation='60'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperFilter)' opacity='0.1'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif text-tarot-gold tracking-wider;
+}
+
+/* 自定义滚动条 - 古铜色风格 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-tarot-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-tarot-goldDim rounded border border-tarot-bg;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-tarot-gold;
+}
